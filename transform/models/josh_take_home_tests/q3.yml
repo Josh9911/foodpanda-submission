@@ -1,0 +1,14 @@
+models:
+  - name: q3
+    description: 
+      Answer to Q3 of take home test\
+      The top active vendor by GMV in each country
+    meta:
+      owner: Joshua Lim 
+    columns:
+      - country_name
+        description: Name of country
+      - vendor_name
+        description: Name of vendor
+      - total_gmv
+        description: Total GMV for each vendor 
