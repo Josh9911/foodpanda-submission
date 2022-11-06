@@ -1,0 +1,11 @@
+models:
+  - name: part_E
+    description: 
+      Answer to part 2(e) of take home test
+    meta:
+      owner: Joshua Lim 
+    columns:
+      - vendor_name
+        description: Name of vendor
+      - customer_count
+        description: customer count of each vendor 

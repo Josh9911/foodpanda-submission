@@ -7,7 +7,7 @@
 {
     SELECT country_name,
     SUM (gmv_local) as total_gmv
-    FROM `bigquery/tables/datawarehouse/orders.csv` 
+    FROM `orders` 
     GROUP BY country_name
 
 }

@@ -8,10 +8,10 @@
 WITH added_row_number AS (
   SELECT *, ROW_NUMBER() OVER (PARTITION BY country_name ORDER BY total_gmv DESC) AS row_number
   FROM (
-    SELECT DISTINCT `winged-bliss-367614.Orders.Orders`.country_name, `winged-bliss-367614.Vendors.Vendors`.vendor_name, sum(gmv_local) as total_gmv
-  FROM `winged-bliss-367614.Orders.Orders`
-  LEFT JOIN `winged-bliss-367614.Vendors.Vendors` 
-  ON `winged-bliss-367614.Orders.Orders`.vendor_id = `winged-bliss-367614.Vendors.Vendors`.id
+    SELECT DISTINCT `orders`.country_name, `vendors`.vendor_name, sum(gmv_local) as total_gmv
+  FROM `orders`
+  LEFT JOIN `vendors` 
+  ON `orders`.vendor_id =`vendors`.id
   WHERE is_active = TRUE
   GROUP BY country_name, vendor_name
 
