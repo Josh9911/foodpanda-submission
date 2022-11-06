@@ -1,0 +1,15 @@
+models:
+  - name: q2
+    description: 
+      Answer to Q2 of take home test\
+      The total GMV of Vendors in Taiwan and their customer count
+      Ordered by customer count 
+    meta:
+      owner: Joshua Lim 
+    columns:
+      - vendor_name
+        description: Name of vendor
+      - customer_count
+        description: Count of customers for each vendor
+      - total_gmv
+        description: Total GMV for each vendor 

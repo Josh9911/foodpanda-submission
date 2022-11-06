@@ -1,0 +1,17 @@
+models:
+  - name: q4
+    description: 
+      Answer to Q4 of take home test\
+      The top 2 vendors per country, in each year
+      ordered by year, ascending order of total_gmv
+    meta:
+      owner: Joshua Lim 
+    columns:
+      - year
+        description: year of transaction
+      - country_name
+        description: Name of country
+      - vendor_name
+        description: Name of vendor
+      - total_gmv
+        description: Total GMV for each vendor in that country 
